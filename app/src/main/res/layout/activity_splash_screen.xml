@@ -25,30 +25,22 @@
             android:src="@drawable/splashcard" />
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+    <Button
         android:id="@+id/splashgo"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:backgroundTint="#EC3C05"
         app:cornerRadius="15dp"
+        android:hint="Go"
+        android:textSize="30sp"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/aladin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.737" >
-        <TextView
-            android:id="@+id/textmusic"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="GO"
-            android:textColor="@color/white"
-            android:textSize="29sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/aladin"
-            android:gravity="center"/>
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintVertical_bias="0.737" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

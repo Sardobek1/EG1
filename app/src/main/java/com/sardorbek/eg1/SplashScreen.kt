@@ -13,6 +13,7 @@ class SplashScreen : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         val mediaplayer = MediaPlayer.create(this, R.raw.splashmusic)
         window.decorView.apply {
             systemUiVisibility =
@@ -24,7 +25,7 @@ class SplashScreen : AppCompatActivity() {
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
-        binding.textmusic.setOnClickListener {
+        binding.splashgo.setOnClickListener {
             if (!mediaplayer.isPlaying())
                 mediaplayer.start()
         }

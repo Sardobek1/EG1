@@ -18,19 +18,19 @@ class MainActivity : AppCompatActivity() {
                 View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
         }
         val mediaplayer = MediaPlayer.create(this,R.raw.splashmusic)
+
         binding.musicstop.setOnClickListener {
             if (!mediaplayer.isLooping)
                 mediaplayer.pause()
         }
         binding.cardView2.setOnClickListener {
             startActivity(Intent(this,Eg2::class.java))
-            finish()}
+           }
             binding.cardView5.setOnClickListener {
                 startActivity(Intent(this,Eg5::class.java))
-                finish()}
+                }
                 binding.cardView7.setOnClickListener {
                     startActivity(Intent(this,Eg7::class.java))
-                    finish()
         }
 
     }}

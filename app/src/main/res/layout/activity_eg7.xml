@@ -25,7 +25,8 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/white"
             android:textColor="#E68D09"
-            android:textSize="22sp" />
+            android:gravity="center"
+            android:textSize="32sp" />
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -40,25 +41,11 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/eggs2" />
+            android:src="@drawable/egg7" />
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/timego7"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:fontFamily="@font/aladin"
-        android:hint="Start"
-        android:textColorHint="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:layout_constraintVertical_bias="0.896" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
